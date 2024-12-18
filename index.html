@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="header-content">
+                <h2>To-Do List <img src="img/todo.png" alt="icon"></h2>
+  
+                <!-- clock -->
+                <div class="wrapper">
+                    <div class="header">
+                      <img src="./img/clockImg.jpg" alt="clock" class="clock">
+                      <h1>00:00:00 AM/PM</h1>
+                    </div>
+                    <div class="content">
+                        <div class="column">
+                            <select>
+                                <option value="Hour" selected hidden >Hour</option>
+                                
+                            </select>
+                        </div>        
+                        <div class="column">
+                            <select>
+                                <option value="Minute" selected hidden >Minute</option>
+                                
+                            </select>
+                        </div>
+                   
+                        <div class="column">
+                            <select>
+                                <option value="AM/PM" selected hidden >AM/PM</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <button id="alarmBtn">Set Alarm</button>
+            </div>
+
+            <!-- todo list -->
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="Add your text">                             
+                <button class="todobtn" onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
